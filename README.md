@@ -7,6 +7,16 @@
 - 💼 **NTT DATA** (prácticas, mayo–octubre 2026): mantenimiento de **SIGLO**, el sistema de gestión logística del Servicio Andaluz de Salud. Más de 300 incidencias resueltas (Java, Oracle SQL, PL/SQL), más de 10 informes automatizados con JasperReports y un **servidor MCP en Python** que permite a un agente de IA consultar Oracle de forma segura, adoptado por el equipo.
 - 🤖 Desarrollo con agentes de IA (Claude Code, Codex, Gemini, Copilot) dentro de un proceso de ingeniería: planificación por fases, ADRs, tests y CI.
 
+### 🧭 Cómo trabajo con IA: flujo GSD
+
+Desarrollo con agentes de IA siguiendo [GSD](https://github.com/open-gsd/gsd-core), un framework open source de desarrollo guiado por especificaciones (*spec-driven development*) y *context engineering*. Yo defino el alcance y los criterios de aceptación; los agentes ejecutan; y nada se da por terminado sin verificarlo.
+
+**Discutir → Planificar → Ejecutar → Verificar → Entregar**
+
+- Cada fase deja un artefacto versionado (`CONTEXT`, `PLAN`, `SUMMARY`, `VERIFICATION`, `UAT`) que es la fuente de verdad del siguiente paso, así que la especificación sobrevive entre sesiones y el proceso es auditable.
+- Planificar, implementar y verificar se hacen en contextos separados: la revisión no hereda la confianza del código recién escrito.
+- Lo he aplicado de principio a fin en **BarGAIN** (12 fases y 38 planes en [`.planning/`](https://github.com/Nicoparri/bargain-tfg/tree/main/.planning)) y en **FinanzaSQLite** (hito v1.0 en 4 fases con auditoría de requisitos).
+
 ### Proyectos destacados
 
 | Proyecto | Qué es | Mi papel | Stack |
@@ -18,7 +28,7 @@
 
 ### Stack
 
-`Java` `Spring Boot` `Python` `Django` `DRF` `TypeScript` `React` `React Native` `Oracle` `PL/SQL` `PostgreSQL` `PostGIS` `Docker` `GitHub Actions` `Git` `Jira` `Scrum`
+`Java` `Spring Boot` `Python` `Django` `DRF` `TypeScript` `React` `React Native` `Oracle` `PL/SQL` `PostgreSQL` `PostGIS` `Docker` `GitHub Actions` `Git` `Jira` `Scrum` `GSD` `Claude Code` `Spec-driven development`
 
 ### Contacto
 
@@ -26,4 +36,4 @@
 
 ---
 
-🇬🇧 *Junior backend / full-stack developer based in Seville, Spain (English C1, Cambridge). Software Engineering graduate (final-year project graded 9.1) with 6 months at NTT DATA on a public-health logistics system (Java, Oracle, PL/SQL). Open to hybrid roles in Seville or remote for EU companies.*
+🇬🇧 *Junior backend / full-stack developer based in Seville, Spain (English C1, Cambridge). Software Engineering graduate (final-year project graded 9.1) with 6 months at NTT DATA on a public-health logistics system (Java, Oracle, PL/SQL). I build with AI coding agents through GSD, a spec-driven workflow: I set scope and acceptance criteria, agents execute, and every phase is verified before it ships. Open to hybrid roles in Seville or remote for EU companies.*
